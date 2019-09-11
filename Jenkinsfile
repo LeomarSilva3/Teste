@@ -2,7 +2,7 @@ pipeline {
     agent {
         docker {
             image "ruby:alpine"
-            image "chromedriver"
+            image "robcherry/docker-chromedriver:latest"
             args "--network=skynet"
         }
        
